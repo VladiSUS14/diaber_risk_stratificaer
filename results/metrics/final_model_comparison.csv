@@ -1,0 +1,4 @@
+﻿model,threshold,accuracy,balanced_accuracy,precision,recall,f1_score,roc_auc
+Logistic Regression,0.5,0.583,0.442,0.143,0.2,0.167,0.316
+Random Forest,0.5,0.833,0.674,0.667,0.4,0.5,0.632
+Random Forest Tuned,0.4,0.667,0.642,0.333,0.6,0.429,0.684

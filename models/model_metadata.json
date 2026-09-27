@@ -1,0 +1,28 @@
+{
+    "target": "nephropathy_risk",
+    "display_name": "Диабетическая нефропатия",
+    "model_name": "Random Forest Tuned no HbA1c",
+    "decision_threshold": 0.5,
+    "threshold": 0.5,
+    "status": "main",
+    "metrics": {
+        "accuracy": 0.792,
+        "balanced_accuracy": 0.721,
+        "precision": 0.5,
+        "recall": 0.6,
+        "f1_score": 0.545,
+        "roc_auc": 0.632
+    },
+    "excluded_features": [
+        "hba1c_mean",
+        "hba1c_last",
+        "hba1c_max",
+        "acr_max",
+        "acr_last",
+        "albuminuria_max",
+        "albuminuria_last",
+        "egfr_min",
+        "egfr_last"
+    ],
+    "medical_note": "HbA1c исключен из входных признаков модели нефропатии по рекомендации медицинского специалиста. Целевая переменная nephropathy_risk формируется по лабораторным признакам: ACR >= 3 мг/ммоль или альбуминурия >= 30 мг/л или СКФ < 60."
+}

@@ -1,0 +1,16 @@
+{
+    "target": "angiopathy_risk",
+    "display_name": "Диабетическая ретинопатия / ангиопатия",
+    "model_name": "Random Forest",
+    "threshold": 0.5,
+    "metrics": {
+        "accuracy": 0.8,
+        "balanced_accuracy": 0.64,
+        "precision": 0.667,
+        "recall": 0.333,
+        "f1_score": 0.444,
+        "roc_auc": 0.566
+    },
+    "status": "experimental",
+    "note": "Модель является экспериментальной. Качество ограничено малым объемом выборки и небольшим количеством пациентов положительного класса."
+}
